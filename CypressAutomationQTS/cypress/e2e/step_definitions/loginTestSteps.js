@@ -1,6 +1,6 @@
 import {Given,When,Then,And} from "cypress-cucumber-preprocessor/steps"
-import LoginPage from '../pageObject/LoginPage';
-import HomePage from '../pageObject/HomePage';
+import LoginPage from '../../pages/LoginPage';
+import HomePage from '../../pages/HomePage';
 const loginPage = new LoginPage();
 const homePage = new HomePage();
 Given('User is on home page',()=> {
@@ -11,9 +11,9 @@ When('user click on login button',()=> {
     homePage.getLoginButton().click();        
 })
 
-Then('user enter username and password',()=>{
-    loginPage.getUserNameField().type('raoz');
-    loginPage.getPasswordField().type('test');
+Then('user enter username {string} and password {string}',(username,password)=>{
+    loginPage.getUserNameField().type(username);
+    loginPage.getPasswordField().type(password);
     
 })
 

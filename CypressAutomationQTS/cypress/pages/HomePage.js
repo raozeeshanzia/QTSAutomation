@@ -4,11 +4,15 @@ class HomePage {
     }
 
     getNextButton() {
-        return cy.get('.next > a');
+        return cy.get('.next > awerrrrr');
     }
 
     getTopTenTags() {
         return cy.get('div .tags-box span.tag-item');
+    }
+
+    getPreviousButton(){
+        return cy.get('.previous');
     }
 
 }

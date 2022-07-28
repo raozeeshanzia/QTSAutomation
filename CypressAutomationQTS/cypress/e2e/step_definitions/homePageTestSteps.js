@@ -1,5 +1,5 @@
 import {Given,When,Then,And} from "cypress-cucumber-preprocessor/steps"
-import HomePage from "../pageObject/HomePage"
+import HomePage from "../../pages/HomePage"
 
 const homePage = new HomePage();
 
@@ -18,4 +18,12 @@ Then('verify that top ten tags were display on screen',()=> {
 
 Then('verify that next button is display on screen',()=> {
     expect(homePage.getNextButton().should('be.visible'));
+})
+
+Then('click on next button',()=>{
+    homePage.getNextButton().click();
+})
+
+And('verify that move to next page successfully',()=>{
+    expect(homePage.getPreviousButton().should('be.visible'));
 })

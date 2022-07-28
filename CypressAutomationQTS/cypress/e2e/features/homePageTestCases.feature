@@ -12,3 +12,9 @@ Feature: Home Page Test Cases Feature File
     Scenario: Verify that next button is visible on screen
     Given User is on home page
     Then verify that next button is display on screen
+
+    Scenario: verify that next button is working fine
+    Given User is on home page
+    Then click on next button 
+    And verify that move to next page successfully
+    

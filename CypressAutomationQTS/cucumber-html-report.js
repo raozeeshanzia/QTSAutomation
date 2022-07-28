@@ -1,8 +1,11 @@
-const report = require("multiple-cucumber-html-reporter");
+const report = require('multiple-cucumber-html-reporter');
 report.generate({
-    jsonDir: "./cypress/cucumber-json",  // ** Path of .json file **//
-    reportPath: "./mochawesome-report",
+    theme: 'bootstrap',
+    jsonDir: "cypress/cucumber-json",  // ** Path of .json file **//
+    reportPath: "reports/finalReport",
     reportSuiteAsScenarios: true,
+    scenarioTimestamp: true,
+    launchReport: true,
     metadata: {
         browser: {
             name: "Chrome",
