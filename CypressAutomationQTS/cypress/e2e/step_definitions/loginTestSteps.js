@@ -17,8 +17,8 @@ Then('user enter username {string} and password {string}',(username,password)=>{
     
 })
 
-And('click on login Button',()=>{
-    loginPage.getLoginBtn().click();
+And('click on login Button',()=>{   
+        loginPage.getLoginBtn().click();       
 })
 
 Then('verify that user is successfully logion',()=>{

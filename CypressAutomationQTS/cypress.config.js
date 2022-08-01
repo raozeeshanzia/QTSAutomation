@@ -13,6 +13,7 @@ module.exports = defineConfig({
   },
   env: {
     base_url: 'https://quotes.toscrape.com/'   
-  }
+  },
+  videoCompression: false
  
 });
