@@ -17,4 +17,15 @@ Feature: Home Page Test Cases Feature File
     Given User is on home page
     Then click on next button 
     And verify that move to next page successfully
+
+    Scenario Outline: Verify that tag Link is in working condition
+    Given User is on home page
+    Then user click on given tag "<tagName>"
+    And verify that tag "<tagName>" link is open successfully
+
+    Examples:
+        | tagName | 
+        | love    | 
+
+
     

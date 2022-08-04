@@ -27,3 +27,11 @@ Then('click on next button',()=>{
 And('verify that move to next page successfully',()=>{
     expect(homePage.getPreviousButton().should('be.visible'));
 })
+
+Then('user click on given tag {string}',(tagName)=>{
+    homePage.clickOnTag(tagName);
+})
+
+And('verify that tag {string} link is open successfully',(tagName)=>{
+    expect(homePage.getViewingTag().should('have.text',tagName));
+})
