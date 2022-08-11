@@ -3,35 +3,35 @@ import HomePage from "../../pages/HomePage"
 
 const homePage = new HomePage();
 
-Given('user is on home page',()=> {
-    expect(homePage.getLoginButton().should('be.visible'));
+Given('user is on home page',() => {
+    homePage.isLoginBtnVisible();
 })
 
-Then('verify that login button is visible',()=> {
-    expect(homePage.getLoginButton().should('be.visible'));
+Then('verify that login button is visible',() => {
+    homePage.isLoginBtnVisible();
 })
 
-Then('verify that top ten tags were display on screen',()=> {
-    expect(homePage.getTopTenTags().should('have.length',10));
+Then('verify that top ten tags were display on screen',() => {
+    homePage.isTopTenTagsVisible();
 
 })
 
-Then('verify that next button is display on screen',()=> {
-    expect(homePage.getNextButton().should('be.visible'));
+Then('verify that next button is display on screen',() => {
+    homePage.isNextBtnVisible();
 })
 
 Then('click on next button',()=>{
-    homePage.getNextButton().click();
+    homePage.clickOnNextButton();
 })
 
-And('verify that move to next page successfully',()=>{
-    expect(homePage.getPreviousButton().should('be.visible'));
+And('verify that move to next page successfully',() => {
+    homePage.isPerviousBtnVisible();
 })
 
-Then('user click on given tag {string}',(tagName)=>{
+Then('user click on given tag {string}',(tagName) => {
     homePage.clickOnTag(tagName);
 })
 
-And('verify that tag {string} link is open successfully',(tagName)=>{
-    expect(homePage.getViewingTag().should('have.text',tagName));
+And('verify that tag {string} link is open successfully',(tagName) => {
+    homePage.isViewingTagContainText(tagName);
 })

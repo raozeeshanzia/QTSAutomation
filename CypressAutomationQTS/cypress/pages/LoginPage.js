@@ -1,14 +1,24 @@
 class LoginPage {
-    getUserNameField(){
-        return cy.get('#username');
+    elements = {
+        usernameFiled: ()=> cy.get('#username'),
+        passwordField: ()=> cy.get('#password'),
+        loginButton: ()=> cy.get('.btn')
     }
 
-    getPasswordField(){
-        return cy.get('#password');
+    typeUsername(username) {
+        this.elements.usernameFiled().type(username);
     }
 
-    getLoginBtn(){
-        return cy.get('.btn');
+    typePassword(pasword) {
+        this.elements.passwordField().type(pasword);
+    }
+
+    clickOnLoginBtn() {
+        this.elements.loginButton().click();
+    }
+    
+    getTextOfLoginBtn() {
+        return this.elements.loginButton().text();
     }
 
 }

@@ -1,22 +1,44 @@
 class HomePage { 
-    getLoginButton() {
-        return cy.get('.col-md-4 > p > a');
+
+    elements = {
+        loginButton:() => cy.get('.col-md-4 > p > a'),
+        nextButton:()=> cy.get('.next > a'),
+        toptentags:()=> cy.get('div .tags-box span.tag-item a'),
+        listOfTags:()=> cy.get('div .tags-box span.tag-item a'),
+        viewTag: ()=> cy.get('h3 > a'),
+        perviousButton:()=> cy.get('.previous')
     }
 
-    getNextButton() {
-        return cy.get('.next > a');
+    isLoginBtnVisible() {
+        expect(this.elements.loginButton().should('be.visible'));
     }
 
-    getTopTenTags() {
-        return cy.get('div .tags-box span.tag-item a');
+    isNextBtnVisible() {
+        expect(this.elements.nextButton().should('be.visible'));
     }
 
-    getPreviousButton() {
-        return cy.get('.previous');
+    isTopTenTagsVisible() {
+        expect(this.elements.toptentags().should('have.length',10));
+    }
+
+    isPerviousBtnVisible() {
+        expect(this.elements.perviousButton().should('be.visible'));
+    }
+
+    clickOnLoginButton() {
+        this.elements.loginButton().click();
+    }
+
+    clickOnNextButton() {
+        this.elements.nextButton().click()
+    }
+
+    getListOfTags(){
+        return this.elements.listOfTags();
     }
 
     clickOnTag(tagName) {
-        cy.get('div .tags-box span.tag-item a').each(($item,index,$list)=>{
+        this.getListOfTags().each(($item,index,$list)=>{
             if($item.text() === tagName){
                 cy.wrap($item).click();
             }else{
@@ -25,11 +47,8 @@ class HomePage {
         })
     }
 
-    getViewingTag(){
-          return cy.get('h3 > a');
+    isViewingTagContainText(tagName) {
+        expect(this.elements.viewTag().should('have.text',tagName));
     }
-
-
-
 }
 export default HomePage;

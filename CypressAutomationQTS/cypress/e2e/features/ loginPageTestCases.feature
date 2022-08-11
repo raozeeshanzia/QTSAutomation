@@ -5,7 +5,7 @@ Feature: Login Page Test Cases
     Given User is on home page
     When user click on login button
     Then user enter username "<username>" and password "<password>"
-    #And click on login Button
+    And click on login Button
     Then verify that user is successfully logion
     
     Examples:
