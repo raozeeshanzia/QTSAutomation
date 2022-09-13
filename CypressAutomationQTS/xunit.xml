@@ -1,0 +1,33 @@
+<testsuite name="Mocha Tests" tests="1" failures="0" errors="1" skipped="0" timestamp="Wed, 20 Jul 2022 08:48:23 GMT" time="13.921">
+<testcase classname="Login Page Test Cases" name="Verify User sucessfully login" time="0"><failure>Timed out after waiting &#x60;10000ms&#x60; for your remote page to load.
+
+Your page did not fire its &#x60;load&#x60; event within &#x60;10000ms&#x60;.
+
+You can try increasing the &#x60;pageLoadTimeout&#x60; value in &#x60;cypress.config.js&#x60; to wait longer.
+
+Browsers will not fire the &#x60;load&#x60; event until all stylesheets and scripts are done downloading.
+
+When this &#x60;load&#x60; event occurs, Cypress will continue running commands.
+CypressError: Timed out after waiting &#x60;10000ms&#x60; for your remote page to load.
+
+Your page did not fire its &#x60;load&#x60; event within &#x60;10000ms&#x60;.
+
+You can try increasing the &#x60;pageLoadTimeout&#x60; value in &#x60;cypress.config.js&#x60; to wait longer.
+
+Browsers will not fire the &#x60;load&#x60; event until all stylesheets and scripts are done downloading.
+
+When this &#x60;load&#x60; event occurs, Cypress will continue running commands.
+    at timedOutWaitingForPageLoad (https://quotes.toscrape.com/__cypress/runner/cypress_runner.js:155461:74)
+    at https://quotes.toscrape.com/__cypress/runner/cypress_runner.js:155893:16
+    at tryCatcher (https://quotes.toscrape.com/__cypress/runner/cypress_runner.js:13012:23)
+    at https://quotes.toscrape.com/__cypress/runner/cypress_runner.js:8134:41
+    at tryCatcher (https://quotes.toscrape.com/__cypress/runner/cypress_runner.js:13012:23)
+    at Promise._settlePromiseFromHandler (https://quotes.toscrape.com/__cypress/runner/cypress_runner.js:10947:31)
+    at Promise._settlePromise (https://quotes.toscrape.com/__cypress/runner/cypress_runner.js:11004:18)
+    at Promise._settlePromise0 (https://quotes.toscrape.com/__cypress/runner/cypress_runner.js:11049:10)
+    at Promise._settlePromises (https://quotes.toscrape.com/__cypress/runner/cypress_runner.js:11125:18)
+    at _drainQueueStep (https://quotes.toscrape.com/__cypress/runner/cypress_runner.js:7719:12)
+    at _drainQueue (https://quotes.toscrape.com/__cypress/runner/cypress_runner.js:7712:9)
+    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://quotes.toscrape.com/__cypress/runner/cypress_runner.js:7728:5)
+    at Async.drainQueues (https://quotes.toscrape.com/__cypress/runner/cypress_runner.js:7598:14)</failure></testcase>
+</testsuite>

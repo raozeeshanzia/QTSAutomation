@@ -1,0 +1,154 @@
+[
+  {
+    "description": "    This file include all test cases related home Page",
+    "keyword": "Feature",
+    "name": "Home Page Test Cases Feature File",
+    "line": 1,
+    "id": "home-page-test-cases-feature-file",
+    "tags": [],
+    "uri": "homePageTestCases.feature",
+    "elements": [
+      {
+        "id": "home-page-test-cases-feature-file;verify-that-login-button-is-visible",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Verify that login button is visible",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "User is on home page",
+            "result": {
+              "status": "passed",
+              "duration": 1894000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "verify that login button is visible",
+            "result": {
+              "status": "passed",
+              "duration": 52000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "home-page-test-cases-feature-file;verify-that-top-tags-were-visible-on-screen",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "Verify that top tags were visible on screen",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "User is on home page",
+            "result": {
+              "status": "passed",
+              "duration": 946000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "verify that top ten tags were display on screen",
+            "result": {
+              "status": "passed",
+              "duration": 22000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "home-page-test-cases-feature-file;verify-that-next-button-is-visible-on-screen",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Verify that next button is visible on screen",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 13,
+            "name": "User is on home page",
+            "result": {
+              "status": "passed",
+              "duration": 390000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "verify that next button is display on screen",
+            "result": {
+              "status": "passed",
+              "duration": 14000000
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "description": "    This file inculde all login related test cases avaialbe",
+    "keyword": "Feature",
+    "name": "Login Page Test Cases",
+    "line": 1,
+    "id": "login-page-test-cases",
+    "tags": [],
+    "uri": "loginPageTestCases.feature",
+    "elements": [
+      {
+        "id": "login-page-test-cases;verify-user-is-successffully-login",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Verify user is successffully login",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "User is on home page",
+            "result": {
+              "status": "passed",
+              "duration": 1427000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "user click on login button",
+            "result": {
+              "status": "passed",
+              "duration": 441000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "user enter username and password",
+            "result": {
+              "status": "passed",
+              "duration": 543000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
